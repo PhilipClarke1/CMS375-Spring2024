@@ -1,0 +1,16 @@
+rollins_activities_and_descriptions table 
+    --'ActivityName' (Primary key, VARCHAR)
+    -- 'Description' (TEXT)
+
+Events table
+    -- "Event" (Primary key, VARCHAR)
+    -- "club" (VARCHAR, referenceing rollins_activities_and_descriptions.ActivityName)
+
+## Users table if our group has time to add 
+
+users table 
+    -- 'UserID' (Primary Key, INT, AUTO_INCREMENT)
+    -- 'username' (VARCHAR)
+    -- 'email' (VARCHAR)
+    -- 'password' (VARCHAR) ## ideally stored as a hash 
+    -- 'role" (VARCHAR) #student, professor, etc 
