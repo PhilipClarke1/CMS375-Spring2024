@@ -1,6 +1,7 @@
 <!-- Philip, Brandon, and Trevor all worked on this file -->
 <?php
 $servername = "localhost";
+$servername = "localhost";  
 $username = "root";
 $password = "";
 $dbname = "clubs";
