@@ -3,7 +3,7 @@ $servername = "localhost";
 $username = "root";
 $password = "";
 $dbname = "clubs";
-$port = 3307;  // Update this if your MySQL is on a different port
+$port = 3308;  // Update this if your MySQL is on a different port
 
 $connection = mysqli_connect($servername, $username, $password, $dbname, $port);
 

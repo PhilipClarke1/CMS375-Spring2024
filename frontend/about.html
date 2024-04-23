@@ -4,14 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About - Rollins Club Connector</title>
-    <!-- Bootstrap and other stylesheets -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>.navbar { margin-bottom: 20px; }</style>
 </head>
 <body>
-    <nav> <!-- Your navbar here --> </nav>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="index.php">Rollins Club Connector</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="index.php">Home</a>
+                <a class="nav-item nav-link active" href="about.html">About</a>
+            </div>
+        </div>
+    </nav>
+
     <div class="container">
-        <h1>About Us</h1>
-        <p>Information about the project and the team.</p>
-        <!-- More content here -->
+        <h2>About Us</h2>
+        <p>Our mission is to connect Rollins students with clubs and activities that enhance their academic and social lives.</p>
+        
+        <h3>Team Members</h3>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="../assets/philip.jpeg" class="card-img-top" alt="Philip">
+                    <div class="card-body">
+                        <h5 class="card-title">Philip Clarke</h5>
+                        <p class="card-text">Philip is a dedicated member of our team.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="../assets/trevor.jpeg" class="card-img-top" alt="Trevor">
+                    <div class="card-body">
+                        <h5 class="card-title">Trevor Dorfman</h5>
+                        <p class="card-text">Trevor is known for his creative ideas and insights.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="../assets/brandon.png" class="card-img-top" alt="Brandon">
+                    <div class="card-body">
+                        <h5 class="card-title">Brandon Shortrede</h5>
+                        <p class="card-text">Brandon brings a wealth of experience to our projects.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+
+    <script src="app.js"></script>
 </body>
 </html>
