@@ -2,7 +2,7 @@
 
 ## Team Members
 - Team lead: Philip Clarke
-- Programmer: Trevor "T-dot" Dorfman
+- Programmer: Trevor Dorfman
 - Pragrammer: Brandon Shortrede
 
 ### Abstract
