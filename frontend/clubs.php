@@ -35,40 +35,25 @@
                     <tr>
                         <th>Club Name</th>
                         <th>Description</th>
-                        <th>Action</th>
                     </tr>
                 </thead>
                 <tbody>
                     <?php
                     include '../databasestuff/connect.php';
-
-                    // Check if the request method is GET and an ID is provided
-                    if ($_SERVER['REQUEST_METHOD'] == 'GET' && isset($_GET['id'])) {
-                        $id = $connection->real_escape_string($_GET['id']);
-                        $sql = "DELETE FROM rollins_activities_and_descriptions WHERE id = $id";
-
-                        // Execute the delete query
-                        if ($connection->query($sql)) {
-                            // Optionally add some confirmation message or redirection
-                            echo "<script>alert('Record deleted successfully!');</script>";
-                        } else {
-                            echo "Error deleting record: " . $connection->error;
-                        }
-                    }
-
-                    // Fetch and display the list of clubs
-                    $result = $connection->query("SELECT * FROM rollins_activities_and_descriptions");
-                    if ($result->num_rows > 0) {
+                    $sql = "SELECT ActivityName, Description FROM rollins_activities_and_descriptions";
+                    $stmt = $connection->prepare($sql);
+                    $stmt->execute();
+                    $result = $stmt->get_result();
+                    if ($result && $result->num_rows > 0) {
                         while ($row = $result->fetch_assoc()) {
-                            echo "<tr>";
-                            echo "<td>" . htmlspecialchars($row['ActivityName']) . "</td>";
-                            echo "<td>" . htmlspecialchars($row['Description']) . "</td>";
-                            echo "<td><a href='?id=" . $row['id'] . "' class='btn btn-danger'>Delete</a></td>";
-                            echo "</tr>";
+                            echo "<tr><td>" . htmlspecialchars($row['ActivityName']) . "</td>";
+                            echo "<td>" . htmlspecialchars($row['Description']) . "</td></tr>";
                         }
                     } else {
-                        echo "<tr><td colspan='3'>No clubs found.</td></tr>";
+                        echo "<tr><td colspan='2'>No clubs found</td></tr>";
                     }
+                    $stmt->close();
+                    $connection->close();
                     ?>
                 </tbody>
             </table>
