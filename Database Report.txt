@@ -1,0 +1,28 @@
+﻿Rollins Club Connector
+Trevor Dorfman, Philip Clarke, Brandon Shortrede
+Link to github
+
+
+        The Rollins Club Connector project aims to simplify the process of finding and joining student clubs and organizations at Rollins College. By creating a user-friendly database and interface, this project seeks to enhance student engagement and participation in extracurricular activities by making it easier for students to discover clubs that match their interests. This initiative will also serve as a platform for clubs to increase their visibility, recruit new members, and share events and updates with the campus community.
+
+
+        We developed Rollins Club Connector by working together to develop a front end and a back end. Philip worked hard to get the database working and made sure it was connecting to the front end. Trevor worked on the frontend working with the HTML and PHP HTML files. Brendon went back and forth between the two. All members though worked on both sides helping wherever it was needed. The relevant code and schema diagram will be included at the end of this report. The schema that is attached is not comprehensive of the project so far as we were unable to implement all of the functions that we had hoped for. Rather than submit many files of code I just showed a clip of our index.php and our python script to get our data. All of our pages are in php files and html files in the frontend folder. These connect to all of the information about the database and scraping capabilities in the databaseStuff folder. Lastly we have a small assets folder with pictures etc. 
+
+
+        Screenshots of the website will be provided at the end of the report. These will show 3 distinct sections of the website. The home, the browse, and the about pages. The home page allows users to search clubs by name, as well as modify those clubs. This works by searching up a club by the name and then selecting it. After selecting it you are given the description and the options to update or delete it. Updating it will allow you to change the name or the bio of the club. Deleting it will remove that club from the database. The browse page displays all the clubs and you can do the same functions as the home page but you just scroll. The About page tells you about the team that worked on the project.
+        
+        We have no sources other than https://getinvolved.rollins.edu/organizations as we scraped the data ourselves from that website. We also did not use any external resources for assistance. 
+
+
+        In this project, we learned how to combine all the skills that we learned in class. This consists of building a database using MySQL, creating a front end using HTML and PHP, and finally using xampp to connect the front and back ends together. We believe all the functions of the website work well and how it is intended. The xampp was not working well in the beginning and gave us problems. We resolved this by going into the JSON settings and fixing it in VS code. Another problem we ran into is the database only showing the chess club. We resolved this by running the database in MySQL and we had to update to get the right names for every club. Moving forward we believe that Rollins Club Connector can significantly boost the interconnectivity of campus.
+  
+
+  
+
+  
+  
+  
+
+  
+
+Appendix:
