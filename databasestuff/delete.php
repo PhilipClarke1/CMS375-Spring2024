@@ -39,7 +39,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <?php
+                <?php
                     include '../databasestuff/connect.php';
 
                     // Check if the request method is GET and an ID is provided
@@ -69,7 +69,7 @@
                     } else {
                         echo "<tr><td colspan='3'>No clubs found.</td></tr>";
                     }
-                    ?>
+                ?>
                 </tbody>
             </table>
         </div>
